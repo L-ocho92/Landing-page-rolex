@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+}
+
+.logo {
+    width: 10vw;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    padding: 0 15px;
+    font-size: 1.25em;
+}
