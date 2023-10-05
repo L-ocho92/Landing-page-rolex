@@ -1,4 +1,10 @@
-*{ 
+body { /* full-page background */
+    background: rgb(2,0,36);
+    background: linear-gradient(183deg, rgba(2,0,36,1) 45%, rgba(9,9,121,1) 100%, rgba(19,0,255,1) 100%);
+}
+
+
+*{ /* takes up the whole page */
     padding: 0;
     margin: 0;
 }
@@ -7,7 +13,7 @@ header{  /* used for logos and titles */
     justify-content: space-between;
     align-items: center;
     width: 55vw; /* vw screen width */
-    color: #22531E;
+    color: white;
 }
 
 .nav{
@@ -36,24 +42,26 @@ header{  /* used for logos and titles */
 
 .button{ /* Buy button */
     display: flex;
-    padding: 10px;
+    padding: 20px 0;
     margin: 0 auto;
-    width: 100px;
-    border-radius: 10px;
-    background-color: #22531E;
+    width: 100%;
+    background-color: white;
     justify-content: center;
     margin-bottom: 60px;
     font-size: 22px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #22531E;
 }
 
-.button a{ /* Buy Wacht Master 42 button */
+.button a{ /* Buy Wach */
     text-decoration: none;
-    color: #fff;
-    
-}
-
-img:nth-child(2){ /* width between photo and buy button */
-    padding-bottom: 30px;
+    border-radius: 5px;
+    color: #22531E;
+    background-color: #FFF;
+    padding: 10px 20px;
+    border: 2px solid #A37E2C;
 }
 
 .watch{ 
@@ -67,6 +75,12 @@ img:nth-child(2){ /* width between photo and buy button */
     width: 700px;
     height: 400px;
     margin-bottom: 40px;
+    transition: all 0.5s; /* remove the mouse on the watch and it returns to its original state */
+}
+
+.watch img:hover{ /* enlarge the image by moving the mouse over it */
+    transform: scale(1.2);
+    transition: all 0.5s;
 }
 
 .title{ /* title Wacht Master 42 */
@@ -75,7 +89,7 @@ img:nth-child(2){ /* width between photo and buy button */
     justify-content: center;
     font-size: 40px;
     margin-bottom: 20px;
-    color: #22531E;
+    color: white;
 }
 
 .text{ /* text Watch master 42 */
@@ -86,7 +100,7 @@ img:nth-child(2){ /* width between photo and buy button */
     text-align: center;
     font-size: 19px;
     margin-bottom: 50px;
-    color: #22531E;
+    color: white;
 }
 
 .boat{
@@ -105,14 +119,14 @@ img:nth-child(2){ /* width between photo and buy button */
     text-align: center;
     font-size: 40px;
     padding-bottom: 15px;
-    color: #22531E;
+    color: white;
 }
 
 .newsletter p { /* text newsletter */
     text-align: center;
     font-size: 18px;
     padding-bottom: 15px;
-    color: #22531E;
+    color: white;
     
 }
 
