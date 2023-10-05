@@ -1,20 +1,31 @@
-header{
+*{ 
+    padding: 0;
+    margin: 0;
+}
+header{  /* used for logos and titles */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60vw;
+    width: 55vw; /* vw screen width */
 }
 
-.logo {
-    width: 10vw;
-}
 
 .nav{
     display: flex;
 }
 
-.nav li{
+.nav li{ /* align my elements( title) */
     list-style: none;
     padding: 0 15px;
     font-size: 1.25em;
+}
+
+.logo {
+    width: 10vw; /* vw screen width */
+}
+
+.picture img{
+    width: 100vw; /* vw screen width */
+    height: 700px; /* image size */
+    object-fit: cover; /* solves problems of proportion */
 }
