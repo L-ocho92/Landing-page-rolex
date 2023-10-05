@@ -9,7 +9,6 @@ header{  /* used for logos and titles */
     width: 55vw; /* vw screen width */
 }
 
-
 .nav{
     display: flex;
 }
@@ -23,9 +22,64 @@ header{  /* used for logos and titles */
 .logo {
     width: 10vw; /* vw screen width */
 }
-
+.picture{
+    display: flex;
+    flex-direction: column;
+}
 .picture img{
     width: 100vw; /* vw screen width */
     height: 700px; /* image size */
     object-fit: cover; /* solves problems of proportion */
+}
+
+.button{ /* Buy button */
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #22531E;
+    justify-content: center;
+    margin-bottom: 60px;
+    font-size: 22px;
+}
+
+.button a{ /* Buy button */
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+img:nth-child(2){ /* width between photo and buy button */
+    padding-bottom: 30px;
+}
+
+.watch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch img{
+    width: 700px;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    text-align: center;
+    font-size: 19px;
 }
