@@ -180,3 +180,57 @@ header{  /* used for logos and titles */
 .reseaux li {
     margin: 10px;
 }
+
+@media screen and (max-width: 780px) { /* responsive part */
+    header{
+    flex-direction: column-reverse;
+    width: 100%;
+    }
+    .logo {
+        width: 20vw;
+    }
+    .nav li{
+        list-style: none;
+        padding: 5px;
+        font-size: 1.25em;
+        padding-left: 30px;
+    }
+    .picture img{ 
+        height: 500px;
+    }
+    .button{
+        padding: 14px;
+        width: auto;
+    }
+    .watch img {
+        width: 620px;
+        height: 350px;
+    }
+    .watch {
+        overflow: hidden;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .text{ /* text Watch master 42 */
+        width: 300px;
+    }
+   
+    .newsletter h4 {
+        font-size: 30px;
+    }
+    .newsletter p {
+        font-size: 16px;
+    }
+    .footer{
+        flex-direction: row;
+    }
+    .footerlogo{
+        height: 30px;
+        width: 55px;
+    }
+    .reseaux{
+        flex-wrap: wrap;
+    }
+
+}
